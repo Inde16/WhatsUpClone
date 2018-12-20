@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Chat App</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">luXVTilrllbFTROHxpViNcCjCLi8qSFv9gM9l2QM</string>
+    <string name="back4app_client_key">7aIlmW6r6AVzRnCaBIdt1ScRcnXXvvsAPUkyja34</string>
+</resources>

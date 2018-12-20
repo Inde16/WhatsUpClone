@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+
+    <ListView
+        android:id="@+id/listViewChat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_toLeftOf="@+id/buttonSend"
+            android:layout_alignBottom="@+id/buttonSend"
+            android:gravity="top"
+            android:hint="Enter Message"
+            android:imeOptions="actionSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/buttonSend"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="Send"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:pb_colorComplete="@color/green_complete"
+            app:pb_colorNormal="@color/blue_normal"
+            app:pb_colorProgress="@color/purple_progress"
+            app:pb_colorPressed="@color/blue_pressed"
+            app:pb_textComplete="Success"
+            app:pb_textProgress="Sending..."
+            app:pb_textError="Error"
+            app:pb_colorError="@color/red_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

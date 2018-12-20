@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "941569567281",
+    "firebase_url": "https://whatsupclone-c728e.firebaseio.com",
+    "project_id": "whatsupclone-c728e",
+    "storage_bucket": "whatsupclone-c728e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941569567281:android:27aac500203e5858",
+        "android_client_info": {
+          "package_name": "com.example.sot_e.whatsup_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941569567281-kl0fedklti3naevnj0kqtrps3btlnjej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sot_e.whatsup_clone",
+            "certificate_hash": "8cf9a462f6e9835cf5d66d00f0debb7d22a58a05"
+          }
+        },
+        {
+          "client_id": "941569567281-vqr1le5jfbjud6r2mcb3aldkd8sj2ot8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYydtdbG3oK9rXDEweOfgUnc3I7PI6xzU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941569567281-vqr1le5jfbjud6r2mcb3aldkd8sj2ot8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
