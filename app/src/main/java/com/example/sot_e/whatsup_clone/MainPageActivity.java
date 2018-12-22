@@ -1,10 +1,13 @@
 package com.example.sot_e.whatsup_clone;
 
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresPermission;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.Manifest;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -36,5 +39,15 @@ public class MainPageActivity extends AppCompatActivity {
                 return;
             }
         });
+
+        getPermissions();
+    }
+
+    private void getPermissions() {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestPermissions(new String[]{Manifest.permission.WRITE_CONTACTS , Manifest.permission.READ_CONTACTS} , 1);
+        }
+
     }
 }

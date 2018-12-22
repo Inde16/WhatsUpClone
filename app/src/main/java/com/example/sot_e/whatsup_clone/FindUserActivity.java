@@ -1,5 +1,7 @@
 package com.example.sot_e.whatsup_clone;
 
+import android.database.Cursor;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -24,7 +26,26 @@ public class FindUserActivity extends AppCompatActivity {
         userList = new ArrayList<>();
 
         initializeRecyclerView();
+        getContactList();
     }
+
+    private void getContactList() {
+
+        Cursor phones = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI , null , null  , null , null);
+
+        while(phones.moveToNext()) {
+            String name = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+            String phone = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+
+            UserObject mContact = new UserObject(name , phone);
+
+            userList.add(mContact);
+
+            mUserListAdapter.notifyDataSetChanged();
+        }
+
+    }
+
 
     private void initializeRecyclerView() {
 
